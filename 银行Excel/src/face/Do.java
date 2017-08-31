@@ -6,7 +6,9 @@ import java.util.Scanner;
 import IO流.Write;
 import basicAttribute.ShuRu;
 import basicFunction.login;
+import basicFunction.moveMoney;
 import basicFunction.seaveMoney;
+import basicFunction.takeMoney;
 import jxl.read.biff.BiffException;
 import loan.Judge;
 import loan.Loan;
@@ -28,7 +30,7 @@ public class Do {
 				System.exit(0);				
 			}
 			break;
-		case 2:login.card.takeMoney();
+		case 2:new takeMoney();
 			System.out.println("返回上一层请按1。退出程序请按2。");
 			int j1 = scanner.nextInt();
 			if (j1==1) {
@@ -38,7 +40,7 @@ public class Do {
 				System.exit(0);				
 			}
 			break;
-		case 3:login.card.moveMoney();
+		case 3:new moveMoney();
 			System.out.println("返回上一层请按1。退出程序请按2。");
 			int j2 = scanner.nextInt();
 			if (j2==1) {

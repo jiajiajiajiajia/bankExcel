@@ -50,8 +50,9 @@ public class Write {
 				HSSFCell row_title_cell42 = row_title2.createCell(4);
 				row_title_cell42.setCellValue(Card.cards.get(i).getPerson().getMyLoan().getÊ£Óà»¹¿îÊý());
 			}			
-			wb.write(out);
+			
 		}
+		wb.write(out);
 		out.flush();
 		out.close();
 		System.out.print(Card.cards);

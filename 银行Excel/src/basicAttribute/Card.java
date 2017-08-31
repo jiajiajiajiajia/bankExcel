@@ -66,48 +66,13 @@ public class Card {
 	public void setMoney(double d) {
 		this.money = money+d;
 	}
-	////////////取钱的方法
-	public void takeMoney() {
-		System.out.println("请输入您要取的钱数：");
-		Scanner scanner = ShuRu.getInstance();
-		int a = scanner.nextInt();
-		if (a>money) {
-			System.out.println("余额不足。操作失败。");
-		}
-		else this.money = money-a;
-		System.out.println("您已取走"+a+"元,现在卡里的余额是："+(this.money));
-	}
+	
 	/////////////还贷款的划账方法
 	public void takeMoney2(double a) {
 		 this.money = money-a;
 	}
 	
 	
-	////////////转账的方法
-	public void moveMoney() {
-		System.out.println("请输入您要转的钱数：");
-		Scanner scanner = ShuRu.getInstance();
-		int a = scanner.nextInt();
-		System.out.println("请输入您要转的卡号：");
-		int b = scanner.nextInt();
-		
-		Card cart=login.getById(b);
-		if (cart==null) {
-			System.out.println("您要转账的卡不存在。");
-		}
-		else {
-		if (a>money) {
-			System.out.println("余额不足。操作失败。");
-		}
-		else {
-			this.money = money-a;
-			System.out.println("您已成功转账"+a+"元,现在卡里的余额是："+(this.money));
-			//////被转账的卡里加钱
-			cart.setMoney(a);
-			}
-		}
-		
-		
-	}
+
 	
 }

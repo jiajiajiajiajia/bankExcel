@@ -38,7 +38,7 @@ public class Read {
 				String d = sheet.getCell(j+4, i).getContents();
 				//½ð¶î
 				String aString4 = sheet.getCell(j+5, i).getContents();
-				int a4 = Integer.valueOf(aString4);
+				double a4 = Double.valueOf(aString4);
 				
 				
 				Person p1 = new Person(a, bString, a2);
@@ -47,6 +47,7 @@ public class Read {
 				
 				
 				/////////
+				
 				
 //				
 //				Sheet sheet2 = wb.getSheet(1);

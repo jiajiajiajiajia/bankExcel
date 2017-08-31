@@ -33,7 +33,7 @@ public class login {
 			for (int i1=0;i1<Card.cards.size();i1++) {
 				if(Card.cards.get(i1).getCartnumber()==a && Card.cards.get(i1).getKeynumber().equals(b)&&c==x) {
 					
-					card=Card.cards.get(i);
+					card=Card.cards.get(i1);
 					System.out.println("验证成功，请进行所需业务操作。");
 					count+=1;
 					break outer;

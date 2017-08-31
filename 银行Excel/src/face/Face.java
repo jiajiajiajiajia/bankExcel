@@ -36,7 +36,8 @@ public class Face {
 		switch (s) {
 		case 1:if (login.chack()==true) {Do.doSomeThing();}break;
 		case 2:Register.zhuce();
-				if (login.chack()==true) {Do.doSomeThing();}break;
+			login.chack(); 
+			Do.doSomeThing();break;
 		case 3:
 			Write.write();
 			System.exit(0);
